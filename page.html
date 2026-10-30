@@ -1,0 +1,36 @@
+<form name="selectForm">
+</form>
+
+<script>
+    //console.log("oi")
+
+    //1 getElementById: selecionamos um elemento pelo seu ID
+    //Só seleciona pelo atributo ID de HTML
+    let btn = document.getElementById("btn");
+    //console.log(btn);
+    
+    //2 getElementsByClassname: selecionamentos vários elementos que compartilham a mesma clase
+    //Só seleciona pelo atributo class do HTML
+    const btnComClasse = document.getElementsByClassName("botão");
+    //console.log(btnComClasse);
+
+    //3 QuerySelector: seleciona um elemento de forma mais flexivel
+    const paragrafo = document.querySelector(".texto"); //. entende que é seleção por classe
+    console.log(paragrafo);
+
+    const botaoDenovo = document.querySelector("#btn"); //# entende que é seleção por ID
+    console.log(botaoDenovo);
+
+    // //Listagem de coleções de elementos html
+    // //botão 1 ->0
+    // // botão 2 ->1
+    //  console.log(btnComClasse[0]);
+    //    console.log(btnComClasse[1]);
+
+    //btn seria o elemento rastreado
+    //click seria o nome do evento do gatilho
+    //function() resposta a ação do evento no elemento
+    btn.addEventListener("click", function () {
+        console.log("clicou");
+    });
+</script>
